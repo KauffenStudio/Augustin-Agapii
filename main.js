@@ -69,7 +69,7 @@ const SESSIONS = [
   },
   {
     id: 'labros-athens',
-    title: 'Labros Athens',
+    title: 'Labros Tyrlis',
     subtitle: 'Labros Tyrlis · Athens, Greece',
     year: 'April 2025',
     images: [
@@ -84,12 +84,12 @@ const SESSIONS = [
     ]
   },
   {
-    id: 'joey-leo-body',
+    id: 'joey-leo',
     title: 'Joey Leo',
-    subtitle: 'Joey Leo · Body',
+    subtitle: 'Joey Leo · Photographer',
     year: '2025',
     images: [
-      // Drop all " 2" alternates and 39F23126 duplicate
+      // Body series
       'images/Joey Leo Body/IMG_0700.JPG',
       'images/Joey Leo Body/IMG_0702.JPG',
       'images/Joey Leo Body/IMG_0704.JPG',
@@ -109,15 +109,7 @@ const SESSIONS = [
       'images/Joey Leo Body/0D8E4E6F-1629-47CF-B3AD-B3FF25742769.JPG',
       'images/Joey Leo Body/7229EEE5-90B2-4327-8583-A9252EA6F471.JPG',
       'images/Joey Leo Body/AA1CC139-A536-4C54-9487-24365AA9EE6D.JPG',
-    ]
-  },
-  {
-    id: 'joey-leo-august',
-    title: 'Joey Leo',
-    subtitle: 'Joey Leo · August Lover',
-    year: '2025',
-    images: [
-      // 0857–0900: keep every 3rd
+      // August Lover series
       'images/Joey Leo August Lover/IMG_0857.JPG',
       'images/Joey Leo August Lover/IMG_0860.JPG',
       'images/Joey Leo August Lover/IMG_0863.JPG',
@@ -132,7 +124,6 @@ const SESSIONS = [
       'images/Joey Leo August Lover/IMG_0892.JPG',
       'images/Joey Leo August Lover/IMG_0896.JPG',
       'images/Joey Leo August Lover/IMG_0900.JPG',
-      // L'Homme Nu / August Lover magazine
       'images/Joey Leo August Lover/IMG_3351.JPG',
       'images/Joey Leo August Lover/IMG_3352.JPG',
       'edited/IMG_3353_edit.jpg',
@@ -241,9 +232,9 @@ const SESSIONS = [
    ============================================================ */
 const FEATURED_INITIAL = [
   { src: 'images/Ferran Casanova/Dsquared 1.JPEG',              session: 'ferran-casanova',  title: 'Ferran Casanova', year: '2025' },
-  { src: 'images/Joey Leo Body/IMG_0700.JPG',                    session: 'joey-leo-body',    title: 'Joey Leo',        year: '2025' },
-  { src: 'images/Labros Athens/IMG_0616.JPG',                    session: 'labros-athens',    title: 'Labros Athens',   year: 'April 2025' },
-  { src: 'images/Joey Leo August Lover/IMG_0857.JPG',            session: 'joey-leo-august',  title: 'Joey Leo',        year: '2025' },
+  { src: 'images/Joey Leo Body/IMG_0700.JPG',                    session: 'joey-leo',    title: 'Joey Leo',        year: '2025' },
+  { src: 'images/Labros Athens/IMG_0616.JPG',                    session: 'labros-athens',    title: 'Labros Tyrlis',   year: 'April 2025' },
+  { src: 'images/Joey Leo August Lover/IMG_0857.JPG',            session: 'joey-leo',  title: 'Joey Leo',        year: '2025' },
   { src: 'images/Ricardo Santos September 2025/IMG_4976.JPG',    session: 'ricardo-santos',   title: 'Ricardo Santos',  year: '2023 – 2025' },
   { src: 'images/Lucas Fonseca Carcavelos /IMG_6175.JPG',        session: 'carcavelos-beach', title: 'Male Model Scene', year: 'October 2024' },
 ];
@@ -256,14 +247,14 @@ const FEATURED_ALL = [
   { src: 'images/Jose Martinez/IMG_0047.JPG',                                          session: 'jose-martinez',    title: 'Jose Martinez',   year: '2025' },
   { src: 'images/Jose Martinez/IMG_0053.JPG',                                          session: 'jose-martinez',    title: 'Jose Martinez',   year: '2025' },
   // Labros Athens
-  { src: 'images/Labros Athens/IMG_0616.JPG',                                          session: 'labros-athens',    title: 'Labros Athens',   year: 'April 2025' },
-  { src: 'images/Labros Athens/EF6E927E-4AF0-4700-B206-BCFFFDC591E2.JPG',              session: 'labros-athens',    title: 'Labros Athens',   year: 'April 2025' },
+  { src: 'images/Labros Athens/IMG_0616.JPG',                                          session: 'labros-athens',    title: 'Labros Tyrlis',   year: 'April 2025' },
+  { src: 'images/Labros Athens/EF6E927E-4AF0-4700-B206-BCFFFDC591E2.JPG',              session: 'labros-athens',    title: 'Labros Tyrlis',   year: 'April 2025' },
   // Joey Leo Body
-  { src: 'images/Joey Leo Body/IMG_0700.JPG',                                          session: 'joey-leo-body',    title: 'Joey Leo',        year: '2025' },
-  { src: 'images/Joey Leo Body/IMG_0712.JPG',                                          session: 'joey-leo-body',    title: 'Joey Leo',        year: '2025' },
+  { src: 'images/Joey Leo Body/IMG_0700.JPG',                                          session: 'joey-leo',    title: 'Joey Leo',        year: '2025' },
+  { src: 'images/Joey Leo Body/IMG_0712.JPG',                                          session: 'joey-leo',    title: 'Joey Leo',        year: '2025' },
   // Joey Leo August Lover
-  { src: 'images/Joey Leo August Lover/IMG_0857.JPG',                                  session: 'joey-leo-august',  title: 'Joey Leo',        year: '2025' },
-  { src: 'images/Joey Leo August Lover/IMG_3351.JPG',                                  session: 'joey-leo-august',  title: 'Joey Leo',        year: '2025' },
+  { src: 'images/Joey Leo August Lover/IMG_0857.JPG',                                  session: 'joey-leo',  title: 'Joey Leo',        year: '2025' },
+  { src: 'images/Joey Leo August Lover/IMG_3351.JPG',                                  session: 'joey-leo',  title: 'Joey Leo',        year: '2025' },
   // Ricardo Santos
   { src: 'images/Ricardo Santos September 2025/IMG_4976.JPG',                          session: 'ricardo-santos',   title: 'Ricardo Santos',  year: '2023 – 2025' },
   { src: 'images/Ricardo SANTOS 2023/IMG_1986.JPG',                                    session: 'ricardo-santos',   title: 'Ricardo Santos',  year: '2023 – 2025' },
