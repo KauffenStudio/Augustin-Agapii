@@ -285,46 +285,57 @@ const SESSIONS = [
 ];
 
 /* ============================================================
-   CURATED "ALL" VIEW — best picks per session for diversity
+   CURATED "ALL" VIEW
+   FEATURED_INITIAL — 6 photos shown on load (mobile-friendly)
+   FEATURED_ALL — full curated selection shown after "Show More"
    ============================================================ */
+const FEATURED_INITIAL = [
+  { src: 'images/Ferran Casanova/Dsquared 1.JPEG',                                  session: 'ferran-casanova',     title: 'Ferran Casanova',   year: '2025' },
+  { src: 'images/Corneliani Autumn Winter 2025 Collection/IMG_0783.jpg',             session: 'corneliani',          title: 'Corneliani',        year: '2025' },
+  { src: 'images/Joey Leo Body/IMG_0700.JPG',                                        session: 'joey-leo-body',       title: 'Joey Leo',          year: '2025' },
+  { src: 'images/Labros Athens/IMG_0616.JPG',                                        session: 'labros-athens',       title: 'Labros Athens',     year: 'April 2025' },
+  { src: 'images/Joey Leo August Lover/IMG_0857.JPG',                                session: 'joey-leo-august',     title: 'Joey Leo',          year: '2025' },
+  { src: 'images/Ricardo Santos September 2025/IMG_4976.JPG',                        session: 'ricardo-santos-2025', title: 'Ricardo Santos',    year: 'September 2025' },
+];
+
 const FEATURED_ALL = [
   // Corneliani
-  { src: 'images/Corneliani Autumn Winter 2025 Collection/IMG_0783.jpg', session: 'corneliani',          title: 'Corneliani',        year: '2025' },
-  { src: 'images/Corneliani Autumn Winter 2025 Collection/IMG_1504.WEBP', session: 'corneliani',         title: 'Corneliani',        year: '2025' },
+  { src: 'images/Corneliani Autumn Winter 2025 Collection/IMG_0783.jpg',             session: 'corneliani',          title: 'Corneliani',        year: '2025' },
+  { src: 'images/Corneliani Autumn Winter 2025 Collection/IMG_1504.WEBP',            session: 'corneliani',          title: 'Corneliani',        year: '2025' },
   // Ferran Casanova
-  { src: 'images/Ferran Casanova/Dsquared 1.JPEG',  session: 'ferran-casanova', title: 'Ferran Casanova',   year: '2025' },
-  { src: 'images/Ferran Casanova/IMG_9524.JPG',     session: 'ferran-casanova', title: 'Ferran Casanova',   year: '2025' },
+  { src: 'images/Ferran Casanova/Dsquared 1.JPEG',                                   session: 'ferran-casanova',     title: 'Ferran Casanova',   year: '2025' },
+  { src: 'images/Ferran Casanova/IMG_9524.JPG',                                      session: 'ferran-casanova',     title: 'Ferran Casanova',   year: '2025' },
   // Jose Martinez
-  { src: 'images/Jose Martinez/IMG_0047.JPG',       session: 'jose-martinez',   title: 'Jose Martinez',     year: '2025' },
-  { src: 'images/Jose Martinez/IMG_0053.JPG',       session: 'jose-martinez',   title: 'Jose Martinez',     year: '2025' },
+  { src: 'images/Jose Martinez/IMG_0047.JPG',                                        session: 'jose-martinez',       title: 'Jose Martinez',     year: '2025' },
+  { src: 'images/Jose Martinez/IMG_0053.JPG',                                        session: 'jose-martinez',       title: 'Jose Martinez',     year: '2025' },
   // Labros Athens
-  { src: 'images/Labros Athens/IMG_0616.JPG',       session: 'labros-athens',   title: 'Labros Athens',     year: 'April 2025' },
-  { src: 'images/Labros Athens/EF6E927E-4AF0-4700-B206-BCFFFDC591E2.JPG', session: 'labros-athens', title: 'Labros Athens', year: 'April 2025' },
+  { src: 'images/Labros Athens/IMG_0616.JPG',                                        session: 'labros-athens',       title: 'Labros Athens',     year: 'April 2025' },
+  { src: 'images/Labros Athens/EF6E927E-4AF0-4700-B206-BCFFFDC591E2.JPG',            session: 'labros-athens',       title: 'Labros Athens',     year: 'April 2025' },
   // Joey Leo Body
-  { src: 'images/Joey Leo Body/IMG_0700.JPG',       session: 'joey-leo-body',   title: 'Joey Leo',          year: '2025' },
-  { src: 'images/Joey Leo Body/IMG_0712.JPG',       session: 'joey-leo-body',   title: 'Joey Leo',          year: '2025' },
+  { src: 'images/Joey Leo Body/IMG_0700.JPG',                                        session: 'joey-leo-body',       title: 'Joey Leo',          year: '2025' },
+  { src: 'images/Joey Leo Body/IMG_0712.JPG',                                        session: 'joey-leo-body',       title: 'Joey Leo',          year: '2025' },
   // Joey Leo August Lover
-  { src: 'images/Joey Leo August Lover/IMG_0857.JPG', session: 'joey-leo-august', title: 'Joey Leo',        year: '2025' },
-  { src: 'images/Joey Leo August Lover/IMG_3351.JPG', session: 'joey-leo-august', title: 'Joey Leo',        year: '2025' },
+  { src: 'images/Joey Leo August Lover/IMG_0857.JPG',                                session: 'joey-leo-august',     title: 'Joey Leo',          year: '2025' },
+  { src: 'images/Joey Leo August Lover/IMG_3351.JPG',                                session: 'joey-leo-august',     title: 'Joey Leo',          year: '2025' },
   // Ricardo Santos Sep 2025
-  { src: 'images/Ricardo Santos September 2025/IMG_4976.JPG', session: 'ricardo-santos-2025', title: 'Ricardo Santos', year: 'September 2025' },
-  { src: 'images/Ricardo Santos September 2025/IMG_4987.JPG', session: 'ricardo-santos-2025', title: 'Ricardo Santos', year: 'September 2025' },
+  { src: 'images/Ricardo Santos September 2025/IMG_4976.JPG',                        session: 'ricardo-santos-2025', title: 'Ricardo Santos',    year: 'September 2025' },
+  { src: 'images/Ricardo Santos September 2025/IMG_4987.JPG',                        session: 'ricardo-santos-2025', title: 'Ricardo Santos',    year: 'September 2025' },
   // Porto
-  { src: 'images/Porto/IMG_4994.JPG',               session: 'porto',           title: 'Porto',             year: '2025' },
-  { src: 'images/Porto/IMG_5003.JPG',               session: 'porto',           title: 'Porto',             year: '2025' },
+  { src: 'images/Porto/IMG_4994.JPG',                                                session: 'porto',               title: 'Porto',             year: '2025' },
+  { src: 'images/Porto/IMG_5003.JPG',                                                session: 'porto',               title: 'Porto',             year: '2025' },
   // Male Model Scene
-  { src: 'images/Lucas Fonseca Carcavelos /IMG_6175.JPG', session: 'carcavelos-beach', title: 'Male Model Scene', year: 'October 2024' },
-  { src: 'images/Lucas Fonseca Carcavelos /IMG_6180.JPG', session: 'carcavelos-beach', title: 'Male Model Scene', year: 'October 2024' },
+  { src: 'images/Lucas Fonseca Carcavelos /IMG_6175.JPG',                            session: 'carcavelos-beach',    title: 'Male Model Scene',  year: 'October 2024' },
+  { src: 'images/Lucas Fonseca Carcavelos /IMG_6180.JPG',                            session: 'carcavelos-beach',    title: 'Male Model Scene',  year: 'October 2024' },
   // Fucking Young!
-  { src: 'images/Fucking Young Cruel Summer 2023/IMG_9962.JPG', session: 'fucking-young', title: 'Fucking Young!', year: 'Sep 2023' },
-  { src: 'images/Fucking Young Cruel Summer 2023/IMG_9966.JPG', session: 'fucking-young', title: 'Fucking Young!', year: 'Sep 2023' },
+  { src: 'images/Fucking Young Cruel Summer 2023/IMG_9962.JPG',                      session: 'fucking-young',       title: 'Fucking Young!',    year: 'Sep 2023' },
+  { src: 'images/Fucking Young Cruel Summer 2023/IMG_9966.JPG',                      session: 'fucking-young',       title: 'Fucking Young!',    year: 'Sep 2023' },
   // Ricardo Santos 2023
-  { src: 'images/Ricardo SANTOS 2023/IMG_1986.JPG', session: 'ricardo-santos-2023', title: 'Ricardo Santos', year: '2023' },
-  { src: 'images/Ricardo SANTOS 2023/IMG_2001.JPG', session: 'ricardo-santos-2023', title: 'Ricardo Santos', year: '2023' },
+  { src: 'images/Ricardo SANTOS 2023/IMG_1986.JPG',                                  session: 'ricardo-santos-2023', title: 'Ricardo Santos',    year: '2023' },
+  { src: 'images/Ricardo SANTOS 2023/IMG_2001.JPG',                                  session: 'ricardo-santos-2023', title: 'Ricardo Santos',    year: '2023' },
   // FiveFourFive
-  { src: 'images/FiveFourFive/IMG_1577.jpg',        session: 'fivefourFive',    title: 'FiveFourFive',      year: '2025' },
+  { src: 'images/FiveFourFive/IMG_1577.jpg',                                         session: 'fivefourFive',        title: 'FiveFourFive',      year: '2025' },
   // Nude Project
-  { src: 'images/Nude Project/IMG_9270.jpg',        session: 'nude-project',    title: 'Nude Project',      year: '2025' },
+  { src: 'images/Nude Project/IMG_9270.jpg',                                         session: 'nude-project',        title: 'Nude Project',      year: '2025' },
 ];
 
 /* ============================================================
@@ -343,9 +354,10 @@ SESSIONS.forEach(session => {
 const BATCH = 24;
 let visibleCount = BATCH;
 let currentFilter = 'all';
+let allExpanded = false; // whether "Show More" has been clicked in All view
 
 function getFilteredImages() {
-  if (currentFilter === 'all') return FEATURED_ALL;
+  if (currentFilter === 'all') return allExpanded ? FEATURED_ALL : FEATURED_INITIAL;
   return ALL_IMAGES.filter(img => img.session === currentFilter);
 }
 
@@ -389,19 +401,25 @@ function buildGrid() {
     grid.appendChild(item);
   });
 
-  // Load More button visibility (hidden in curated All view)
-  loadMoreBtn.style.display = (currentFilter !== 'all' && filtered.length > visibleCount) ? 'inline-block' : 'none';
+  // Load More button visibility
+  const showBtn = (currentFilter === 'all' && !allExpanded) ||
+                  (currentFilter !== 'all' && filtered.length > visibleCount);
+  loadMoreBtn.style.display = showBtn ? 'inline-block' : 'none';
 
   // Trigger reveal for new items
   requestAnimationFrame(() => observeGridItems());
 }
 
 loadMoreBtn.addEventListener('click', () => {
-  visibleCount += BATCH;
+  if (currentFilter === 'all' && !allExpanded) {
+    allExpanded = true;
+  } else {
+    visibleCount += BATCH;
+  }
   buildGrid();
   const items = grid.querySelectorAll('.grid-item');
   if (items.length > 0) {
-    const firstNew = items[visibleCount - BATCH] || items[items.length - 1];
+    const firstNew = items[Math.max(0, visibleCount - BATCH)] || items[items.length - 1];
     firstNew.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
   }
 });
@@ -416,6 +434,7 @@ filterBtns.forEach(btn => {
     btn.classList.add('active');
     currentFilter = btn.dataset.filter;
     visibleCount = BATCH;
+    allExpanded = false;
     buildGrid();
     document.getElementById('portfolio').scrollIntoView({ behavior: 'smooth' });
   });
