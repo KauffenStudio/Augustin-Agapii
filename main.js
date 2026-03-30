@@ -13,27 +13,6 @@
    ============================================================ */
 const SESSIONS = [
   {
-    id: 'corneliani',
-    title: 'Corneliani',
-    subtitle: 'Corneliani A/W 2025 Collection',
-    year: '2025',
-    images: [
-      // 0779–0787 series: keep every other (drop .jpg dupes of WEBPs)
-      'images/Corneliani Autumn Winter 2025 Collection/IMG_0779.WEBP',
-      'images/Corneliani Autumn Winter 2025 Collection/IMG_0781.WEBP',
-      'images/Corneliani Autumn Winter 2025 Collection/IMG_0783.jpg',
-      'images/Corneliani Autumn Winter 2025 Collection/IMG_0785.WEBP',
-      'images/Corneliani Autumn Winter 2025 Collection/IMG_0787.WEBP',
-      // 1504–1510 series
-      'images/Corneliani Autumn Winter 2025 Collection/IMG_1504.WEBP',
-      'images/Corneliani Autumn Winter 2025 Collection/IMG_1506.WEBP',
-      'images/Corneliani Autumn Winter 2025 Collection/IMG_1507.WEBP',
-      'images/Corneliani Autumn Winter 2025 Collection/IMG_1508.WEBP',
-      'images/Corneliani Autumn Winter 2025 Collection/IMG_1509.WEBP',
-      'images/Corneliani Autumn Winter 2025 Collection/IMG_1510.WEBP',
-    ]
-  },
-  {
     id: 'ferran-casanova',
     title: 'Ferran Casanova',
     year: '2025',
