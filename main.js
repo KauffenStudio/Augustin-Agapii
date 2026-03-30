@@ -489,20 +489,27 @@ function observeGridItems() {
 }
 
 /* ============================================================
-   HERO VIDEO PLAYLIST — play videos back-to-back, then loop
+   HERO VIDEO CROSSFADE — two preloaded videos, swap with fade
    ============================================================ */
 function initVideoPlaylist() {
-  const video = document.getElementById('heroVideo');
-  if (!video) return;
-  const playlist = video.dataset.playlist.split(',');
-  let current = 0;
+  const vidA = document.getElementById('heroVideoA');
+  const vidB = document.getElementById('heroVideoB');
+  if (!vidA || !vidB) return;
 
-  video.addEventListener('ended', () => {
-    current = (current + 1) % playlist.length;
-    video.src = playlist[current];
-    video.load();
-    video.play();
-  });
+  function crossfade(from, to) {
+    to.currentTime = 0;
+    to.play();
+    to.classList.add('active');
+    from.classList.remove('active');
+    // After fade completes, pause outgoing video and reset
+    setTimeout(() => {
+      from.pause();
+      from.currentTime = 0;
+    }, 650);
+  }
+
+  vidA.addEventListener('ended', () => crossfade(vidA, vidB));
+  vidB.addEventListener('ended', () => crossfade(vidB, vidA));
 }
 
 /* ============================================================
