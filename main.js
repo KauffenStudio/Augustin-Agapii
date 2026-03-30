@@ -489,6 +489,23 @@ function observeGridItems() {
 }
 
 /* ============================================================
+   HERO VIDEO PLAYLIST — play videos back-to-back, then loop
+   ============================================================ */
+function initVideoPlaylist() {
+  const video = document.getElementById('heroVideo');
+  if (!video) return;
+  const playlist = video.dataset.playlist.split(',');
+  let current = 0;
+
+  video.addEventListener('ended', () => {
+    current = (current + 1) % playlist.length;
+    video.src = playlist[current];
+    video.load();
+    video.play();
+  });
+}
+
+/* ============================================================
    HERO — stagger animation on load
    ============================================================ */
 function initHeroReveal() {
@@ -507,4 +524,5 @@ document.addEventListener('DOMContentLoaded', () => {
   buildGrid();
   observeRevealEls();
   initHeroReveal();
+  initVideoPlaylist();
 });
