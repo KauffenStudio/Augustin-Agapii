@@ -243,7 +243,7 @@ const FEATURED_ALL = [
   { src: 'images/Ricardo Santos September 2025/IMG_4976.JPG',                          session: 'ricardo-santos',   title: 'Ricardo Santos',  year: '2023 – 2025' },
   // Jose Martinez + Male Model Scene August picks
   { src: 'images/Jose Martinez/IMG_0047.JPG',                                          session: 'jose-martinez',    title: 'Jose Martinez',   year: '2025' },
-  { src: 'images/Joey Leo August Lover/IMG_0869.JPG',                                  session: 'mmscene-august',   title: 'Male Model Scene', year: 'August 2025' },
+  { src: 'images/Lucas Fonseca Carcavelos /IMG_6193.JPG',                              session: 'carcavelos-beach', title: 'Male Model Scene', year: 'October 2024' },
   // FiveFourFive
   { src: 'images/FiveFourFive/IMG_1577.jpg',                                           session: 'fivefourFive',     title: 'FiveFourFive',    year: '2025' },
   // Nude Project
