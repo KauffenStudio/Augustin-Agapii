@@ -215,38 +215,38 @@ const SESSIONS = [
    FEATURED_ALL — full curated selection shown after "Show More"
    ============================================================ */
 const FEATURED_INITIAL = [
-  { src: 'images/Ferran Casanova/Dsquared 1.JPEG',              session: 'ferran-casanova',  title: 'Ferran Casanova', year: '2025' },
-  { src: 'images/Joey Leo Body/IMG_0700.JPG',                    session: 'joey-leo',    title: 'Joey Leo',        year: '2025' },
-  { src: 'images/Labros Athens/IMG_0616.JPG',                    session: 'labros-athens',    title: 'Labros Tyrlis',   year: 'April 2025' },
-  { src: 'images/Joey Leo August Lover/IMG_0857.JPG',            session: 'joey-leo',  title: 'Joey Leo',        year: '2025' },
-  { src: 'images/Ricardo Santos September 2025/IMG_4976.JPG',    session: 'ricardo-santos',   title: 'Ricardo Santos',  year: '2023 – 2025' },
-  { src: 'images/Lucas Fonseca Carcavelos /IMG_6175.JPG',        session: 'carcavelos-beach', title: 'Male Model Scene', year: 'October 2024' },
+  { src: 'images/Ferran Casanova/Dsquared 1.JPEG',                     session: 'ferran-casanova',  title: 'Ferran Casanova', year: '2025' },
+  { src: 'images/Labros Athens/IMG_0618.JPG',                           session: 'labros-athens',    title: 'Labros Tyrlis',   year: 'April 2025' },
+  { src: 'images/Joey Leo August Lover/IMG_0866.JPG',                   session: 'mmscene-august',   title: 'Male Model Scene', year: 'August 2025' },
+  { src: 'images/Lucas Fonseca Carcavelos /IMG_6193.JPG',               session: 'carcavelos-beach', title: 'Male Model Scene', year: 'October 2024' },
+  { src: 'images/Fucking Young Cruel Summer 2023/IMG_9964.JPG',         session: 'fucking-young',    title: 'Fucking Young!',  year: 'Sep 2023' },
+  { src: 'images/Ricardo Santos September 2025/IMG_4976.JPG',           session: 'ricardo-santos',   title: 'Ricardo Santos',  year: '2023 – 2025' },
 ];
 
 const FEATURED_ALL = [
   // Ferran Casanova
   { src: 'images/Ferran Casanova/Dsquared 1.JPEG',                                    session: 'ferran-casanova',  title: 'Ferran Casanova', year: '2025' },
   { src: 'images/Ferran Casanova/IMG_9524.JPG',                                        session: 'ferran-casanova',  title: 'Ferran Casanova', year: '2025' },
-  // Jose Martinez
+  // Jose Martinez — one pick only
   { src: 'images/Jose Martinez/IMG_0047.JPG',                                          session: 'jose-martinez',    title: 'Jose Martinez',   year: '2025' },
-  { src: 'images/Jose Martinez/IMG_0053.JPG',                                          session: 'jose-martinez',    title: 'Jose Martinez',   year: '2025' },
-  // Labros Athens
+  // Labros Tyrlis — 3 colourful picks from the pink editorial
   { src: 'images/Labros Athens/IMG_0616.JPG',                                          session: 'labros-athens',    title: 'Labros Tyrlis',   year: 'April 2025' },
+  { src: 'images/Labros Athens/IMG_0618.JPG',                                          session: 'labros-athens',    title: 'Labros Tyrlis',   year: 'April 2025' },
   { src: 'images/Labros Athens/EF6E927E-4AF0-4700-B206-BCFFFDC591E2.JPG',              session: 'labros-athens',    title: 'Labros Tyrlis',   year: 'April 2025' },
-  // Joey Leo Body
-  { src: 'images/Joey Leo Body/IMG_0700.JPG',                                          session: 'joey-leo',    title: 'Joey Leo',        year: '2025' },
-  { src: 'images/Joey Leo Body/IMG_0712.JPG',                                          session: 'joey-leo',    title: 'Joey Leo',        year: '2025' },
-  // Male Model Scene August 2025
-  { src: 'images/Joey Leo August Lover/IMG_0857.JPG',                                  session: 'mmscene-august', title: 'Male Model Scene', year: 'August 2025' },
-  { src: 'images/Joey Leo August Lover/IMG_3351.JPG',                                  session: 'mmscene-august', title: 'Male Model Scene', year: 'August 2025' },
-  // Ricardo Santos
+  // Joey Leo — one body shot
+  { src: 'images/Joey Leo Body/IMG_0700.JPG',                                          session: 'joey-leo',         title: 'Joey Leo',        year: '2025' },
+  // Male Model Scene August 2025 — colourful outdoor picks
+  { src: 'images/Joey Leo August Lover/IMG_0857.JPG',                                  session: 'mmscene-august',   title: 'Male Model Scene', year: 'August 2025' },
+  { src: 'images/Joey Leo August Lover/IMG_0866.JPG',                                  session: 'mmscene-august',   title: 'Male Model Scene', year: 'August 2025' },
+  { src: 'images/Joey Leo August Lover/IMG_3351.JPG',                                  session: 'mmscene-august',   title: 'Male Model Scene', year: 'August 2025' },
+  // Ricardo Santos — one studio pick
   { src: 'images/Ricardo Santos September 2025/IMG_4976.JPG',                          session: 'ricardo-santos',   title: 'Ricardo Santos',  year: '2023 – 2025' },
-  { src: 'images/Ricardo SANTOS 2023/IMG_1986.JPG',                                    session: 'ricardo-santos',   title: 'Ricardo Santos',  year: '2023 – 2025' },
-  // Male Model Scene
-  { src: 'images/Lucas Fonseca Carcavelos /IMG_6175.JPG',                              session: 'carcavelos-beach', title: 'Male Model Scene', year: 'October 2024' },
+  // Male Model Scene Carcavelos — beach/colour picks, 6193 replaces naked torso
   { src: 'images/Lucas Fonseca Carcavelos /IMG_6180.JPG',                              session: 'carcavelos-beach', title: 'Male Model Scene', year: 'October 2024' },
-  // Fucking Young!
+  { src: 'images/Lucas Fonseca Carcavelos /IMG_6193.JPG',                              session: 'carcavelos-beach', title: 'Male Model Scene', year: 'October 2024' },
+  // Fucking Young! — colourful outdoor
   { src: 'images/Fucking Young Cruel Summer 2023/IMG_9962.JPG',                        session: 'fucking-young',    title: 'Fucking Young!',  year: 'Sep 2023' },
+  { src: 'images/Fucking Young Cruel Summer 2023/IMG_9964.JPG',                        session: 'fucking-young',    title: 'Fucking Young!',  year: 'Sep 2023' },
   { src: 'images/Fucking Young Cruel Summer 2023/IMG_9966.JPG',                        session: 'fucking-young',    title: 'Fucking Young!',  year: 'Sep 2023' },
   // FiveFourFive
   { src: 'images/FiveFourFive/IMG_1577.jpg',                                           session: 'fivefourFive',     title: 'FiveFourFive',    year: '2025' },
