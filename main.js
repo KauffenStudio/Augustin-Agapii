@@ -86,10 +86,8 @@ const SESSIONS = [
   {
     id: 'joey-leo',
     title: 'Joey Leo',
-    subtitle: 'Joey Leo · Photographer',
     year: '2025',
     images: [
-      // Body series
       'images/Joey Leo Body/IMG_0700.JPG',
       'images/Joey Leo Body/IMG_0702.JPG',
       'images/Joey Leo Body/IMG_0704.JPG',
@@ -109,7 +107,14 @@ const SESSIONS = [
       'images/Joey Leo Body/0D8E4E6F-1629-47CF-B3AD-B3FF25742769.JPG',
       'images/Joey Leo Body/7229EEE5-90B2-4327-8583-A9252EA6F471.JPG',
       'images/Joey Leo Body/AA1CC139-A536-4C54-9487-24365AA9EE6D.JPG',
-      // August Lover series
+    ]
+  },
+  {
+    id: 'mmscene-august',
+    title: 'Male Model Scene',
+    subtitle: 'Male Model Scene · August 2025',
+    year: 'August 2025',
+    images: [
       'images/Joey Leo August Lover/IMG_0857.JPG',
       'images/Joey Leo August Lover/IMG_0860.JPG',
       'images/Joey Leo August Lover/IMG_0863.JPG',
@@ -252,9 +257,9 @@ const FEATURED_ALL = [
   // Joey Leo Body
   { src: 'images/Joey Leo Body/IMG_0700.JPG',                                          session: 'joey-leo',    title: 'Joey Leo',        year: '2025' },
   { src: 'images/Joey Leo Body/IMG_0712.JPG',                                          session: 'joey-leo',    title: 'Joey Leo',        year: '2025' },
-  // Joey Leo August Lover
-  { src: 'images/Joey Leo August Lover/IMG_0857.JPG',                                  session: 'joey-leo',  title: 'Joey Leo',        year: '2025' },
-  { src: 'images/Joey Leo August Lover/IMG_3351.JPG',                                  session: 'joey-leo',  title: 'Joey Leo',        year: '2025' },
+  // Male Model Scene August 2025
+  { src: 'images/Joey Leo August Lover/IMG_0857.JPG',                                  session: 'mmscene-august', title: 'Male Model Scene', year: 'August 2025' },
+  { src: 'images/Joey Leo August Lover/IMG_3351.JPG',                                  session: 'mmscene-august', title: 'Male Model Scene', year: 'August 2025' },
   // Ricardo Santos
   { src: 'images/Ricardo Santos September 2025/IMG_4976.JPG',                          session: 'ricardo-santos',   title: 'Ricardo Santos',  year: '2023 – 2025' },
   { src: 'images/Ricardo SANTOS 2023/IMG_1986.JPG',                                    session: 'ricardo-santos',   title: 'Ricardo Santos',  year: '2023 – 2025' },
